@@ -5,7 +5,7 @@
         <meta name = "viewport" content = "width=device-width, initial-scale=1">
         <!-- <link rel = "stylesheet" href = "styles.css"> -->
         <script type = "text/javascript" src = "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script language = "JavaScript" type = "text/javascript" src = "website.js"></script>
+        <!--<script language = "JavaScript" type = "text/javascript" src = "website.js"></script>-->
         <button type = "button" onClick = "document.getElementById('about me').scrollIntoView()"> About Me </button>
         <button type = "button" onClick = "document.getElementById('coding projects').scrollIntoView()"> Coding Projects </button>
         <button type = "button" > Resume </button>
@@ -13,7 +13,7 @@
         <title>Lynn's Website</title>
     </head>
 
-    <style>
+<style>
     html {
         scroll-behavior: smooth;
       }
@@ -37,7 +37,30 @@
       #myBtn:hover {
         background-color: rgb(65, 62, 62);
       }
-      </style>
+</style>
+
+<script>
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    
+    </script>
 
     <body>
         <button type = "button" onclick = "topFunction()" id = "myBtn" title = "Go to top"> Top </button>
