@@ -2,6 +2,21 @@ html {
   scroll-behavior: smooth;
 }
 
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(179, 230, 245);
+  list-style: none;
+  padding: 2em;
+}
+
+.navbar ul li a {
+  background-color: yellow;
+  padding: 1em;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
 #myBtn {
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s; //safari
