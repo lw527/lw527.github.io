@@ -1,5 +1,3 @@
-import { scrollIntoView } from "seamless-scroll-polyfill";
-
 // Sticky top button
 //Get the button:
 mybutton = document.getElementById("myBtn");
@@ -20,12 +18,3 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
-// or use specific methods
-seamless.scrollBy(window, { behavior: "smooth", top: 200, left: 0 });
-
-seamless.scrollIntoView(document.querySelector("#target"), {
-    behavior: "smooth",
-    block: "center",
-    inline: "center",
-});
