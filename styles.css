@@ -1,20 +1,113 @@
+body,
 html {
-  scroll-behavior: smooth;
+  height: 100%;
+  background-color: aliceblue;
 }
 
-.navbar ul {
+.bg {
+  /* The image used */
+  background-image: url("images/beach.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bg #name {
+  font-family: Chalkduster, fantasy;
+  font-size: 100px;
+  color: #084b8a;
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  text-align: center;
+}
+
+.bg h2 {
+  font-family: Chalkduster, fantasy;
+  color: #084b8a;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  text-align: center;
+}
+
+body {
+  margin-left: 0px;
+  width: 100%;
+  font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+  padding-bottom: 50px;
+}
+
+.nav {
+  background-color: aliceblue;
+  overflow: hidden;
+  height: 70px;
+  line-height: 70px;
+}
+
+.nav-right li {
+  float: right;
   display: flex;
-  justify-content: space-around;
-  background-color: rgb(179, 230, 245);
-  list-style: none;
-  padding: 2em;
+  font-size: 17px;
+  color: #084b8a;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0px 30px;
 }
 
-.navbar ul li a {
-  background-color: yellow;
-  padding: 1em;
-  border-radius: 12px;
+.nav .nav-right li:hover {
+  color: paleturquoise;
+}
+
+.nav #site_name {
+  float: left;
+  text-align: center;
+  margin-left: 30px;
+  padding: 2px 15px;
+  width: 100 %;
+  font-size: 35px;
   text-decoration: none;
+  font-family: Chalkduster, fantasy;
+  color: #084b8a;
+}
+
+#about h1 {
+  text-align: center;
+}
+
+img {
+  height: 400px;
+  width: auto;
+  padding: 50px;
+}
+
+#about,
+#projects {
+  margin: 100px 100px;
+  width: 90%;
+  height: 800px;
+  margin-left: 5%;
+  padding: 50px 50px;
+  box-sizing: border-box;
+  background-color: #084b8a;
+  border-radius: 20px;
+  color: aliceblue;
+}
+
+#projects me h1 {
+  font-size: 40px;
+}
+#projects me p {
+  font-size: 20px;
+}
+#projects p {
+  font-size: 20px;
 }
 
 #myBtn {
@@ -22,21 +115,22 @@ html {
   -webkit-transition-duration: 0.4s; //safari
   display: none;
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 5px;
+  right: 5px;
   z-index: 99;
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: cornflowerblue;
-  color: white;
+  background-color: #084b8a;
+  color: aliceblue;
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
 }
 
-#myBtn: hover {
+#myBtn:hover {
+  cursor: pointer;
   background-color: white;
-  border: 2px solid cornflowerblue;
-  color: cornflowerblue;
+  border: 2px solid #084b8a;
+  color: #084b8a;
 }
