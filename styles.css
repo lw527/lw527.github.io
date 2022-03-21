@@ -1,12 +1,14 @@
 body,
 html {
   height: 100%;
-  background-color: aliceblue;
+  background-color: #2a2b36;
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
 }
 
 .bg {
   /* The image used */
-  background-image: url("images/beach.jpg");
+  /*background-image: url("");*/
 
   /* Full height */
   height: 100%;
@@ -19,33 +21,24 @@ html {
 }
 
 .bg #name {
-  font-family: Chalkduster, fantasy;
-  font-size: 100px;
-  color: #084b8a;
-  position: absolute;
-  top: 25%;
-  right: 10%;
   text-align: center;
+  vertical-align: middle;
+  font-size: 150px;
+  letter-spacing: 60px;
 }
 
 .bg h2 {
-  font-family: Chalkduster, fantasy;
-  color: #084b8a;
-  position: absolute;
-  top: 50%;
-  right: 10%;
   text-align: center;
 }
 
 body {
   margin-left: 0px;
   width: 100%;
-  font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
   padding-bottom: 50px;
 }
 
 .nav {
-  background-color: aliceblue;
+  background-color: #2a2b36;
   overflow: hidden;
   height: 70px;
   line-height: 70px;
@@ -55,7 +48,6 @@ body {
   float: right;
   display: flex;
   font-size: 17px;
-  color: #084b8a;
   font-weight: bold;
   cursor: pointer;
   margin: 0px 30px;
@@ -68,13 +60,21 @@ body {
 .nav #site_name {
   float: left;
   text-align: center;
+  letter-spacing: 4px;
   margin-left: 30px;
   padding: 2px 15px;
   width: 100 %;
   font-size: 35px;
   text-decoration: none;
-  font-family: Chalkduster, fantasy;
-  color: #084b8a;
+}
+
+.icons {
+  font-size: 36px;
+  text-align: center;
+}
+
+.icons a {
+  color: aliceblue;
 }
 
 #about h1 {
@@ -94,9 +94,6 @@ img {
   height: 800px;
   margin-left: 5%;
   padding: 50px 50px;
-  box-sizing: border-box;
-  background-color: #084b8a;
-  border-radius: 20px;
   color: aliceblue;
 }
 
@@ -113,31 +110,27 @@ img {
 #myBtn {
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s; //safari
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 40px;
   display: none;
   position: fixed;
+  width: 60px;
+  height: 60px;
   bottom: 5px;
   right: 5px;
   z-index: 99;
-  font-size: 18px;
+  font-size: 30px;
   border: none;
   outline: none;
-  background-color: #084b8a;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
   color: aliceblue;
   cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
 }
 
 #myBtn:hover {
   cursor: pointer;
-  background-color: white;
-  border: 2px solid #084b8a;
-  color: #084b8a;
-}
-
-@media only screen and (device-width: 1280px),
-  only screen and (max-width: 1280px) {
-  .css-element {
-    yourcsscode: ;
-  }
+  background: rgba(0, 0, 0, 0.9);
 }

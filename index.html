@@ -5,12 +5,14 @@
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
         <link rel = "icon" href = "images/beach.png">
         <link rel = "stylesheet" href = "styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
         <script language = "JavaScript" type = "text/javascript" src = "website.js"></script>
         <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <title>Lynn's Website</title>
 
         <div class = "nav">
-                <div id="site_name"> L </div>
+                <div id="site_name"> LW</div>
             <div class="nav-right">
                 <li onclick = 'window.location.href = "Cybersecurity_Resume.pdf"'> RESUME </li>
                 <li onclick="scrollto('contact');">CONTACT</li>
@@ -22,23 +24,29 @@
     </head>
 
     <body>
-        <button type = "button" onclick = "topFunction()" id = "myBtn" title = "Go to top"> Top </button>
+        <button type = "button" onclick = "topFunction()" id = "myBtn" title = "Go to top" class="icon-chevron-up"></button>
         <div class="bg"> 
-            <h1 id = "name">Lynn Wei</h1>
+            <h1 id = "name">LYNN WEI</h1>
             <h2> Software Developer </h2>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/lynn-wei-a8867116b" class="fa fa-linkedin-square"></a>
+                <a href="mailto:lynn.wei@rutgers.edu" class="fa fa-envelope"></a>
+            </div>
         </div>
        
         <div id="about">
-        <h1>About Me</h1>
-        <img src = "images/me.jpg">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. </p>
+            <h1>About Me</h1>
+            <img src = "images/me.jpg">
+            <p> Hello! <br> I am a developer passionate about technology and applying technological solutions to everyday problems. As part of my personal growth journey, I continuously strive to learn new things everyday. It was during my undergraduate years when I formally developed an interest in the tech industry, and as a result, began my pursuit of a career in software. Although it is never a bad thing to love to learn, I was quite decidedly torn with which field of science to pursue before university. I was fascinated with Biological Science and Forensic Science. Therefore, I majored in Computer Science, minored in both Forensic Science and Biology, and completed a Cybersecurity Certificate. My fascination with sciences remain, but now, besides coding, I watch Buzzfeed Unsolved and documentaries for fun. I know! What a nerd.
+            </p>
+
+            <p> After completing my degree in January 2021, I decided to take a personal year. The world was a vastly different place before 2020. I graduated in the middle of a pandemic and was really going through it. I spent some much needed time with my family and friends which made the weight of everything tolerable. Now, I am in a much healthier place and I am ready to continue my journey. </p>
         </div>
         
-        <div id="projects">
-        <p>In this tutorial we will show you how to create One Page Website Template Using HTML, CSS And jQuery.Now you can build simple and beautiful website quickly.</p>
-        <p>TalkersCode.com is a complete destination to learn Web Development with Best, Fast and Easy Methods for those who is a novice and wants to be the Xpert in Web Development.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. </p>
+        <div id = "projects">
+            <h1>Projects</h1>
+            <h2> Mover App </h2>
+            <p> In my Software Engineering class, we created a web app </p>
         </div>
         
         <div id="contact">
