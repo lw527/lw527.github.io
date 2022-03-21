@@ -38,8 +38,7 @@ body {
 }
 
 .nav {
-  background-color: #2a2b36;
-  
+  background-color: #2a2b36;s
   height: 70px;
   line-height: 70px;
 }
@@ -150,6 +149,7 @@ img {
 }
 
 #myBtn .icon-chevron-up {
+  align-self: center;
   color: #fff;
   margin: 0;
   position: relative;
