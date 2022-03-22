@@ -1,16 +1,16 @@
 body,
 html {
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   background-color: #2a2b36;
   color: aliceblue;
   font-family: "Open Sans", sans-serif;
-  /*overflow-x: hidden;*/
 }
+
 .bg {
   /* The image used */
   /*background-image: url("");*/
-
+  display: block;
   /* Full height */
   height: 100%;
 
@@ -19,7 +19,6 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  box-sizing: border-box;
 }
 
 .bg #name {
@@ -34,10 +33,9 @@ html {
 }
 
 body {
-  /*margin-left: 0px;*/
-  /*width: 100%;*/
-  margin: 0px;
-  padding: 0px;
+  margin-left: 0px;
+  width: 100%;
+  padding-bottom: 50px;
 }
 
 .nav {
@@ -46,17 +44,13 @@ body {
   line-height: 70px;
 }
 
-.nav {
-  margin-left: 30px;
-}
-
-.nav-right li {
+.nav #nav-right li {
   float: right;
   display: flex;
   font-size: 17px;
   font-weight: bold;
   cursor: pointer;
-  margin-right: 30px;
+  margin: 0px 30px;
 }
 
 .nav .nav-right li:hover {
@@ -65,8 +59,10 @@ body {
 
 .nav #site_name {
   float: left;
-  text-align: center;
   letter-spacing: 4px;
+  margin-left: 30px;
+  padding: 2px 15px;
+  width: 100%;
   font-size: 35px;
   text-decoration: none;
 }
@@ -112,7 +108,11 @@ img {
 
 #myBtn {
   transition-duration: 0.3s;
-  -webkit-transition: all 0.3s; //safari
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   text-decoration: none;
   -webkit-border-radius: 35px;
   -moz-border-radius: 35px;
@@ -121,8 +121,8 @@ img {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 20px;
-  right: 20px;
+  bottom: 5px;
+  right: 5px;
   z-index: 99;
   font-size: 30px;
   border: none;

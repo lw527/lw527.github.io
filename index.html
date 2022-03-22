@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-        <link rel = "icon" href = "images/beach.png">
         <link rel = "stylesheet" href = "styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
@@ -13,13 +12,13 @@
 
         <div class = "nav">
                 <div id="site_name"> LW</div>
-            <div class="nav-right">
-                <li onclick = 'window.location.href = "Cybersecurity_Resume.pdf"'> RESUME </li>
-                <li onclick="scrollto('contact');">CONTACT</li>
-                <li onclick="scrollto('projects');">PROJECTS</li>
-                <li onclick="scrollto('about');">ABOUT ME</li>
-            </div>
-            
+            <nav class="nav-right">
+                <ul>
+                    <li onclick = 'window.location.href = "Cybersecurity_Resume.pdf"'> RESUME </li>
+                    <li onclick="scrollto('projects');">PROJECTS</li>
+                    <li onclick="scrollto('about');">ABOUT ME</li>
+                </ul>
+            </nav>
         </div>
     </head>
 
@@ -46,37 +45,24 @@
         <div id = "projects">
             <h1>Projects</h1>
             <h2> Mover App </h2>
-            <p> In my Software Engineering class, we created a web app </p>
-        </div>
-        
-        <div id="contact">
-        <h1>guhh</h1>
-        </div>
-        
-
-        <!--
-        <nav class = "navbar">
-            <a href = "#projects me" class = "button"> About Me </a>
-            <a href = "#projects" class = "button"> Projects </a>
-            <a href = "#resume" class = "button"> Resume </a>
-            <a href = "#contact me" class = "button"> Contact Me </a>
-        </nav>
-
-        <div id = "projects me">
-            <h1> About Me </h1>
-            <p>
-                I am a Rutgers University Graduate looking to start my career in software development. 
-                As an undergrad, I took an interest in multiple scientific disciplines: Biology, Forensic Science, and Computer Science. 
+            <p> This project was a collaboration between myself and four other team members. We created a web app using Flask, SQL, Python, and HTML. The purpose was to allow users to sign into their account and schedule a service location change on a desired date. We used the USPS API to verify the user's address. A validator method was created to verify a valid future date. 
             </p>
-           
-        <div id = "projects">
-            <h1>Coding Projects </h1>
-            
 
-        <div id = "contact me">
-            <h1> Contact Me </h1>
-     -->
+            <h2> Personal Website</h2>
+            <p> I created this website as practice and went through many iterations before picking some of my favorite elements from the different variations I created. It is an on-going project that will continue to expand as I gain experience. While in school, I was not exposed to JavaScript nor CSS. Through the development of this website, I was able to learn to implement various methods of responsive web design. As a result of Safari's lack in support of the CSS scroll-behavior property, I incorporated JQuery for smooth scrolling and a sticky scroll back to the top button. </p>
 
+            <h2>Work in Progress</h2>
+            <p> I am currently working on mobile compatibility for this website. I previously incorporated support for various browsers and window resizing, but I am noticing scaling issues on mobile devices. </p>
 
+            <h2>Future Projects and Ideas</h2>
+            <h3>Bookkeeping Web App</h3>
+            <p> I am planning to create an app utilizing the Plaid API to fetch information from various financial accounts and personaling my own expense tracking and investment portfolio.</p>
+            <h3>Ideas</h3>
+            <ul>
+                <li> Develop a way to better organize the spotify library using Spotify's Web API</li>
+                <li> Create an iOS app that integrates the camera</li>
+                <li> Construct an app that uses Google Maps API</li>
+            </ul>
+        </div>
     </body>
 </html>
