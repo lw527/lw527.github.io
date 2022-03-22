@@ -9,30 +9,34 @@
         <script language = "JavaScript" type = "text/javascript" src = "website.js"></script>
         <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <title>Lynn's Website</title>
+    </head>
 
-        <div class = "nav">
-                <div id="site_name"> LW</div>
-            <nav class="nav-right">
+    <header>
+        <div class = "navbar">
+            <div id="site_name"> LW</div>
+            <nav class="navbar-right">
                 <ul>
-                    <li onclick = 'window.location.href = "Cybersecurity_Resume.pdf"'> RESUME </li>
-                    <li onclick="scrollto('projects');">PROJECTS</li>
                     <li onclick="scrollto('about');">ABOUT ME</li>
+                    <li onclick="scrollto('projects');">PROJECTS</li>
+                    <li onclick = 'window.location.href = "Cybersecurity_Resume.pdf"'> RESUME </li>
                 </ul>
             </nav>
-        </div>
-    </head>
+         </div>
+    </header>
 
     <body>
         <button type = "button" onclick = "topFunction()" id = "myBtn" title = "Go to top" class="icon-chevron-up"></button>
+        
         <div class="bg"> 
             <h1 id = "name">LYNN WEI</h1>
-            <h2> Software Developer </h2>
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/lynn-wei-a8867116b" class="fa fa-linkedin-square"></a>
-                <a href="mailto:lynn.wei@rutgers.edu" class="fa fa-envelope"></a>
-            </div>
+            <h2> Software Developer </h2> 
         </div>
-       
+
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/lynn-wei-a8867116b" class="fa fa-linkedin-square"></a>
+            <a href="mailto:lynn.wei@rutgers.edu" class="fa fa-envelope"></a>
+        </div>
+
         <div id="about">
             <h1>About Me</h1>
             <img src = "images/me.jpg">
