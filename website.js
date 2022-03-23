@@ -2,7 +2,7 @@
 function scrollto(div){
  $('html,body').animate(
  {
-  scrollTop: $("#"+div).offset().top
+  scrollTop: $("#"+div).offset().top - 50
  }, 1000);
 }
 

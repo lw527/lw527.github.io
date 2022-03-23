@@ -11,22 +11,23 @@
         <title>Lynn's Website</title>
     </head>
 
-    <header>
-        <div class = "navbar">
-            <div id="site_name"> LW</div>
-            <nav class="navbar-right">
-                <ul>
-                    <li onclick="scrollto('about');">ABOUT ME</li>
-                    <li onclick="scrollto('projects');">PROJECTS</li>
-                    <li onclick = 'window.location.href = "Cybersecurity_Resume.pdf"'> RESUME </li>
-                </ul>
-            </nav>
-         </div>
-    </header>
-
     <body>
         <button type = "button" onclick = "topFunction()" id = "myBtn" title = "Go to top" class="icon-chevron-up"></button>
-        
+
+        <header>
+        <div class = "navbar">
+            <div id="site_name"> LW</div>
+                <nav class="navbar-right">
+                    <ul>
+                        <li onclick="scrollto('about');">ABOUT ME</li>
+                        <li onclick="scrollto('projects');">PROJECTS</li>
+                        <li onclick="scrollto('future');">FUTURE PROJECTS</li>
+                        <li onclick = 'window.location.href = "Cybersecurity_Resume.pdf"'> RESUME </li>
+                    </ul>
+                </nav>
+            </div>
+         </header>
+
         <div class="bg"> 
             <h1 id = "name">LYNN WEI</h1>
             <h2> Software Developer </h2> 
@@ -34,39 +35,45 @@
 
         <div class="icons">
             <a href="https://www.linkedin.com/in/lynn-wei-a8867116b" class="fa fa-linkedin-square"></a>
-            <a href="mailto:lynn.wei@rutgers.edu" class="fa fa-envelope"></a>
+            <a href="mailto: lynn.wei@rutgers.edu" class="fa fa-envelope"></a>
         </div>
 
         <div id="about">
             <h1>About Me</h1>
-            <img src = "images/me.jpg">
-            <p> Hello! <br> I am a developer passionate about technology and applying technological solutions to everyday problems. As part of my personal growth journey, I continuously strive to learn new things everyday. It was during my undergraduate years when I formally developed an interest in the tech industry, and as a result, began my pursuit of a career in software. Although it is never a bad thing to love to learn, I was quite decidedly torn with which field of science to pursue before university. I was fascinated with Biological Science and Forensic Science. Therefore, I majored in Computer Science, minored in both Forensic Science and Biology, and completed a Cybersecurity Certificate. My fascination with sciences remain, but now, besides coding, I watch Buzzfeed Unsolved and documentaries for fun. I know! What a nerd.
+            <div class="circular"> <img src = "images/me.jpg"></div>
+            <p> 
+                <span class = "hello"> Hello! </span><br><br>
+                I am a developer passionate about technology and applying technological solutions to everyday problems. As part of my personal growth journey, I continuously strive to learn new things everyday. It was during my undergraduate years when I formally developed an interest in the tech industry, and as a result, began my pursuit of a career in software. Although it is never a bad thing to love to learn, I was quite decidedly torn with which field of science to pursue before university. I was fascinated with Biological Science and Forensic Science. Therefore, I majored in Computer Science, minored in both Forensic Science and Biology, and completed a Cybersecurity Certificate. My fascination with sciences remain, but now, besides coding, I watch Buzzfeed Unsolved and documentaries for fun. 
             </p>
 
-            <p> After completing my degree in January 2021, I decided to take a personal year. The world was a vastly different place before 2020. I graduated in the middle of a pandemic and was really going through it. I spent some much needed time with my family and friends which made the weight of everything tolerable. Now, I am in a much healthier place and I am ready to continue my journey. </p>
+            <p> 
+                After completing my degree in January 2021, I decided to take a personal year. The world was a vastly different place before 2020. I graduated in the middle of a pandemic and was really going through it. I spent some much needed time with my family and friends which made the weight of everything tolerable. Now, I am in a much healthier place and I am ready to continue my journey. 
+            </p>
         </div>
         
         <div id = "projects">
             <h1>Projects</h1>
             <h2> Mover App </h2>
-            <p> This project was a collaboration between myself and four other team members. We created a web app using Flask, SQL, Python, and HTML. The purpose was to allow users to sign into their account and schedule a service location change on a desired date. We used the USPS API to verify the user's address. A validator method was created to verify a valid future date. 
+            <p> 
+                This project was a collaboration between myself and four other team members. We created a web app using Flask, SQL, Python, and HTML. The purpose was to allow users to sign into their account and schedule a service location change on a desired date. We used the USPS API to verify the user's address. A validator method was created to verify a valid future date. 
             </p>
 
             <h2> Personal Website</h2>
-            <p> I created this website as practice and went through many iterations before picking some of my favorite elements from the different variations I created. It is an on-going project that will continue to expand as I gain experience. While in school, I was not exposed to JavaScript nor CSS. Through the development of this website, I was able to learn to implement various methods of responsive web design. As a result of Safari's lack in support of the CSS scroll-behavior property, I incorporated JQuery for smooth scrolling and a sticky scroll back to the top button. </p>
+            <p> I created this website as practice and went through many iterations before picking some of my favorite elements from the different variations I created. It is an on-going project that will continue to expand as I gain experience. While in school, I was not exposed to JavaScript nor CSS. Through the development of this website, I was able to learn to implement various methods of responsive web design. As a result of Safari's lack in support of the CSS scroll-behavior property, I incorporated JQuery for smooth scrolling. A sticky chevron button was added to smooth scroll back to the top of the page. </p>
 
             <h2>Work in Progress</h2>
             <p> I am currently working on mobile compatibility for this website. I previously incorporated support for various browsers and window resizing, but I am noticing scaling issues on mobile devices. </p>
-
-            <h2>Future Projects and Ideas</h2>
-            <h3>Bookkeeping Web App</h3>
-            <p> I am planning to create an app utilizing the Plaid API to fetch information from various financial accounts and personaling my own expense tracking and investment portfolio.</p>
-            <h3>Ideas</h3>
-            <ul>
-                <li> Develop a way to better organize the spotify library using Spotify's Web API</li>
-                <li> Create an iOS app that integrates the camera</li>
-                <li> Construct an app that uses Google Maps API</li>
-            </ul>
         </div>
+
+        <div id = "future">
+            <h1>Future Projects and Ideas</h1>
+            <h2>Bookkeeping Web App</h2>
+            <p> I am planning to create an app utilizing the Plaid API to fetch information from various financial accounts and personaling my own expense tracking and investment portfolio.</p>
+            <h2>Ideas</h2>
+                <p> 1. Develop a way to better organize the spotify library using Spotify's Web API<br>
+                2. Create an iOS app that integrates the camera<br>
+                3. Construct an app that uses Google Maps API</p>
+        </div>
+        <p>Lynn Wei</p>
     </body>
 </html>
